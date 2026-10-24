@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Capeat</title>
+<style>
+:root{--bg:#ffffff;--fg:#1f2933;--muted:#5f6b76;--accent:#2e7d5b;--line:#dfe5ea;--card:#f6f8f7}
+@media (prefers-color-scheme: dark){:root{--bg:#14181b;--fg:#e6ebef;--muted:#9aa7b2;--accent:#6fcf9f;--line:#2b343b;--card:#1b2126}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
+h1{font-size:1.6rem;margin:0}
+h2{font-size:1.2rem;margin:2rem 0 .5rem;padding-top:.5rem;border-top:1px solid var(--line);color:var(--accent)}
+p,li{margin:.4rem 0}
+ul{padding-left:1.4rem}
+.meta{color:var(--muted);font-size:.9rem}
+.note{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:1rem 0}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{background:transparent;color:var(--fg);border:0;padding:6px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);color:#fff}
+a{color:var(--accent)}
+.back{margin:.2rem 0 1rem}
+.back.bottom{margin:2.5rem 0 0;padding-top:1rem;border-top:1px solid var(--line)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="meta">Capeat 照吃 · Winmoon</div>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-set="zh" aria-pressed="false">中文 Language</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<article data-lang="zh">
+<p class="back"><a href="index.html#zh">← 回首頁</a></p>
+<h1>隱私權政策</h1>
+
+<p class="meta">最後更新：2026 年 10 月 24 日</p>
+<div class="note">Capeat 照吃（以下稱「本 App」）由開發者 Winmoon（以下稱「我們」）提供。本 App 的設計原則是：<strong>你的健康資料留在你自己的手機上，我們沒有伺服器，也不會收到你的資料。</strong></div>
+
+<h2>1. 我們不收集什麼</h2>
+<ul>
+<li>本 App 沒有帳號、沒有登入，我們沒有任何伺服器接收你的資料。</li>
+<li>本 App 目前不內建廣告、不內建數據分析或追蹤工具。</li>
+<li>你的病史、健檢數值、照片、問題與 AI 回答，我們都看不到。</li>
+</ul>
+
+<h2>2. 資料存放在你的手機上</h2>
+<p>以下資料只存放在你的手機裡，並以 AES-256-GCM 加密（金鑰保存在 Android Keystore）：</p>
+<ul>
+<li>健康病史、過敏、用藥類別、近期狀況與生活習慣；</li>
+<li>完整健檢、簡易健檢、InBody 的紀錄與範本，以及 AI 分析結果的快取；</li>
+<li>食物諮詢與包裝標籤的歷史紀錄（文字與縮圖）、你寫下的「AI 更正回覆」。</li>
+</ul>
+<p>你的 API Key 與（若你選擇記住）備份密碼，使用 Android 的加密儲存（EncryptedSharedPreferences）存放在手機上，不會傳給我們。解除安裝本 App 會一併刪除這些資料（你另外建立的備份檔與存進相簿的照片除外）。</p>
+
+<h2>3. 資料會送給第三方 AI 服務（由你選擇）</h2>
+<p>本 App 的 AI 功能採「自備 API Key」模式：你在設定中選擇 Google（Gemini）、Anthropic（Claude）或 OpenAI（ChatGPT）其中一家，並貼上你自己的 API Key。當你使用 AI 功能時，資料會<strong>直接從你的手機送到你所選的那一家服務</strong>，不會經過我們：</p>
+<ul>
+<li>食物諮詢：你輸入的問題、你拍攝或選擇的食物照片；</li>
+<li>包裝標籤：標籤照片（辨識時），以及你核對後的標籤文字（整理重點時）；</li>
+<li>健檢功能：健檢報告照片（辨識時）、項目名稱（「？」說明）、健檢數值（AI 比較與單項趨勢分析）；</li>
+<li>追問：你的追問文字，以及先前的問答內容；</li>
+<li><strong>個人化模式</strong>：開啟時，上述請求會一併附上你的病史、過敏、用藥類別、近期狀況與生活習慣；通用模式不會附上。每個相關按鈕旁都有小字提示。</li>
+</ul>
+<p>資料送出後，會依你所選服務提供者的條款與隱私權政策處理（例如是否用於改進產品、保存多久，免費或付費方案可能不同）。請自行閱讀：</p>
+<ul>
+<li>Google：<a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></li>
+<li>Anthropic：<a href="https://www.anthropic.com/legal/privacy" rel="noopener">anthropic.com/legal/privacy</a></li>
+<li>OpenAI：<a href="https://openai.com/policies/privacy-policy" rel="noopener">openai.com/policies/privacy-policy</a></li>
+</ul>
+<p>本 App 在你選擇的服務之間不會自動轉送：失敗時只會在同一家服務的不同模型之間換，不會改送給另一家。</p>
+
+<h2>4. 相機與相簿</h2>
+<p>拍照使用系統相機，本 App 不需要相機權限。拍好的照片可能存進你的相簿（Pictures/Capeat 資料夾），這些照片之後由你自行管理。Android 9 以下需要「寫入儲存空間」權限才能存相簿，拒絕也能正常辨識。拍攝用的暫存照片放在 App 快取，辨識完成後會清除。</p>
+
+<h2>5. 備份與還原</h2>
+<p>備份由你主動建立，內容（紀錄、範本、歷史文字與縮圖）以你設定的密碼加密後存成檔案，儲存位置由你決定（例如雲端硬碟）。<strong>備份不含 API Key。密碼我們無法替你找回，忘記密碼就無法還原。</strong>本 App 設定為不讓系統自動備份或換機轉移帶走敏感資料。</p>
+
+<h2>6. App 鎖與權限</h2>
+<ul>
+<li>App 鎖（選用）使用 Android 系統的生物辨識或螢幕鎖；本 App 不會取得或儲存你的指紋、臉部等生物特徵。</li>
+<li>網路權限：僅用於連線到你所選的 AI 服務。</li>
+</ul>
+
+<h2>7. 你的選擇與權利</h2>
+<ul>
+<li>你可以隨時在 App 內刪除單筆或全部歷史紀錄、健檢紀錄與範本，或清除已儲存的 API Key。</li>
+<li>因為我們沒有你的資料，無法代為存取、更正或刪除；請直接在 App 內操作，或解除安裝。</li>
+<li>已經送到第三方 AI 服務的資料，請依該服務的方式向其申請查詢或刪除。</li>
+</ul>
+
+<h2>8. 兒少</h2>
+<p>本 App 並非為 13 歲以下兒童設計，我們不會刻意收集兒童的個人資料（事實上我們不收集任何使用者資料）。未成年人請在法定代理人同意與陪同下使用。</p>
+
+<h2>9. 未來變更</h2>
+<p>我們可能在未來加入橫幅廣告或付費方案（例如多組使用者資料）。若加入，會事先更新本政策並說明對資料的影響。重大變更會在 App 或商店頁面提示。</p>
+
+<h2>10. 聯絡我們</h2>
+<p>對本政策有任何疑問，請來信：<a href="mailto:yejh00290@gmail.com">yejh00290@gmail.com</a></p>
+
+<p class="back bottom"><a href="index.html#zh">← 回首頁</a></p>
+</article>
+
+<article data-lang="en" hidden>
+<p class="back"><a href="index.html#en">← Back to home</a></p>
+<h1>Privacy Policy</h1>
+
+<p class="meta">Last updated: October 24, 2026</p>
+<div class="note">Capeat (the "App") is provided by the developer Winmoon ("we"). Our design principle: <strong>your health data stays on your own phone. We run no server and never receive your data.</strong></div>
+
+<h2>1. What we do not collect</h2>
+<ul>
+<li>The App has no accounts or sign-in, and we operate no server that receives your data.</li>
+<li>The App currently contains no ads and no built-in analytics or tracking tools.</li>
+<li>We cannot see your medical history, checkup values, photos, questions, or AI answers.</li>
+</ul>
+
+<h2>2. Data stored on your phone</h2>
+<p>The following data is stored only on your device and encrypted with AES-256-GCM (the key is held in the Android Keystore):</p>
+<ul>
+<li>Health history, allergies, medication categories, recent conditions, and lifestyle habits;</li>
+<li>Comprehensive checkup, simple checkup, and InBody records and templates, plus cached AI analyses;</li>
+<li>Food consultation and package-label history (text and thumbnails), and any "AI correction" notes you write.</li>
+</ul>
+<p>Your API keys and (if you choose to remember it) your backup password are kept with Android encrypted storage (EncryptedSharedPreferences) on your phone and are never sent to us. Uninstalling the App deletes this data (except backup files you created and photos saved to your gallery).</p>
+
+<h2>3. Data is sent to a third-party AI service (your choice)</h2>
+<p>The AI features use a "bring your own API key" model. In Settings you choose one provider — Google (Gemini), Anthropic (Claude), or OpenAI (ChatGPT) — and paste your own API key. When you use an AI feature, data goes <strong>directly from your phone to the provider you selected</strong>, not through us:</p>
+<ul>
+<li>Food consultation: your typed question and the food photo you take or select;</li>
+<li>Package labels: label photos (when recognizing) and your verified label text (when summarizing);</li>
+<li>Checkups: report photos (when recognizing), item names ("?" explanations), and checkup values (AI comparison and per-item trend analysis);</li>
+<li>Follow-up questions: your follow-up text and the earlier conversation;</li>
+<li><strong>Personalized mode</strong>: when turned on, the requests above also include your medical history, allergies, medication categories, recent conditions, and lifestyle habits. General mode does not include them. A short notice appears next to each relevant button.</li>
+</ul>
+<p>Once sent, the data is handled under the provider's terms and privacy policy (for example whether it is used to improve products and how long it is kept — free and paid plans may differ). Please read them:</p>
+<ul>
+<li>Google: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></li>
+<li>Anthropic: <a href="https://www.anthropic.com/legal/privacy" rel="noopener">anthropic.com/legal/privacy</a></li>
+<li>OpenAI: <a href="https://openai.com/policies/privacy-policy" rel="noopener">openai.com/policies/privacy-policy</a></li>
+</ul>
+<p>The App never forwards your data to a different provider on its own: if a request fails it only switches between models of the same provider.</p>
+
+<h2>4. Camera and gallery</h2>
+<p>Photos are taken with the system camera, so the App needs no camera permission. Photos you take may be saved to your gallery (the Pictures/Capeat folder); you manage them afterwards. On Android 9 and below, the "write storage" permission is needed to save to the gallery — recognition still works if you deny it. Temporary camera files are kept in the app cache and cleared after recognition.</p>
+
+<h2>5. Backup and restore</h2>
+<p>Backups are created only by you. The contents (records, templates, history text and thumbnails) are encrypted with the password you set and saved as a file wherever you choose (for example a cloud drive). <strong>Backups do not contain API keys. We cannot recover a forgotten password, and without it the backup cannot be restored.</strong> The App is configured so the system's automatic backup and device transfer do not carry over sensitive data.</p>
+
+<h2>6. App lock and permissions</h2>
+<ul>
+<li>The optional App lock uses Android's biometric or screen lock; the App never obtains or stores your fingerprint, face, or other biometric data.</li>
+<li>Internet permission is used only to connect to the AI provider you selected.</li>
+</ul>
+
+<h2>7. Your choices and rights</h2>
+<ul>
+<li>You can delete individual or all history entries, checkup records, and templates, or clear a saved API key, at any time inside the App.</li>
+<li>Because we do not hold your data, we cannot access, correct, or delete it for you; please do it in the App or uninstall it.</li>
+<li>For data already sent to a third-party AI service, please contact that service to request access or deletion.</li>
+</ul>
+
+<h2>8. Children</h2>
+<p>The App is not designed for children under 13, and we do not knowingly collect children's personal data (in fact we collect no user data). Minors should use the App with a parent or legal guardian's consent and supervision.</p>
+
+<h2>9. Future changes</h2>
+<p>We may add banner ads or a paid plan (for example multiple user profiles) in the future. If we do, we will update this policy beforehand and explain the impact on data. Material changes will be announced in the App or on the store page.</p>
+
+<h2>10. Contact</h2>
+<p>For questions about this policy, email: <a href="mailto:yejh00290@gmail.com">yejh00290@gmail.com</a></p>
+
+<p class="back bottom"><a href="index.html#en">← Back to home</a></p>
+</article>
+</main>
+<script>
+(function(){
+  var sections = document.querySelectorAll('[data-lang]');
+  var buttons = document.querySelectorAll('.lang button');
+  function set(l){
+    sections.forEach(function(s){ s.hidden = s.getAttribute('data-lang') !== l; });
+    buttons.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-set') === l ? 'true' : 'false'); });
+    document.documentElement.lang = l === 'zh' ? 'zh-Hant' : 'en';
+    try { history.replaceState(null, '', '#' + l); } catch (e) {}
+  }
+  buttons.forEach(function(b){ b.addEventListener('click', function(){ set(b.getAttribute('data-set')); }); });
+  var h = (location.hash || '').replace('#','');
+  var l = (h === 'zh' || h === 'en') ? h : ((navigator.language || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en');
+  set(l);
+})();
+</script>
+</body>
+</html>
